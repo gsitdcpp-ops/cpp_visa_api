@@ -94,3 +94,6 @@ app.listen(PORT, () => {
   console.log(`Local: http://localhost:${PORT}`);
   console.log("Production: https://oneev-kh-api.vercel.app/");
 });
+
+module.exports = app;
+module.exports.default = (req, res) => app(req, res);
