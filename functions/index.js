@@ -81,6 +81,14 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/abc", (req, res) => {
+  res.json({
+    message: "✅ Server is running!",
+    timestamp: new Date().toISOString(),
+    success: true,
+  });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Local: http://localhost:${PORT}`);
