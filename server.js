@@ -12,14 +12,15 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/myapi", (req, res) => {
+  res.json({
+    message: "✅ Server is running my api!",
+    timestamp: new Date().toISOString(),
+    success: true,
+  });
+});
 
-
-
-
-
-
-
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8888;
 app.listen(PORT, () => {
   console.log(`Local: http://localhost:${PORT}`);
   console.log("Production: https://oneev-kh-api.vercel.app/");
