@@ -1,6 +1,0 @@
-{
-  "watch": ["functions", "src"],
-  "ignore": ["node_modules", ".env", "*.log"],
-  "ext": "js,json",
-  "exec": "node functions/index.js"
-}
