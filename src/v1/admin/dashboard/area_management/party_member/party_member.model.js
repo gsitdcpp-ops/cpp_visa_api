@@ -69,6 +69,12 @@ const activityLogSchema = new mongoose.Schema(
       default: null,
     },
 
+    is_member_cpp: {
+      type: Boolean,
+      required: false,
+      default: null,
+    },
+
     id_card_number: {
       type: String,
       required: false,

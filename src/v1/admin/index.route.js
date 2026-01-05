@@ -33,6 +33,7 @@ const index = (prop) => {
   const ChallengeType = require("../admin/dashboard/challenge/type/type.route");
   const ChallengeProblem = require("../admin/dashboard/challenge/problem/problem.route");
   const GenerateQRCodeLogin = require("../qrcode/authQRCodeLogin.route");
+  const Temp = require("../../temp/temp.route");
   // Implement ==========================
   authRoute(prop); // Auth
   sessionRoute(prop); // Auth
@@ -64,6 +65,7 @@ const index = (prop) => {
   ChallengeType(prop);
   ChallengeProblem(prop);
   GenerateQRCodeLogin(prop);
+  Temp(prop);
 };
 
 module.exports = index;
